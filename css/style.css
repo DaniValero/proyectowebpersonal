@@ -1,6 +1,8 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
+
+   RESET del formato
 */
 
 html, body, div, span, applet, object, iframe,
@@ -49,14 +51,72 @@ table {
 
 /* El estilo empieza aquí */
 
-body {
-    background-image: url("../images/homebackground.jpg");
-	background-repeat:no-repeat;
-	height: 800px;
-	background-position: center;
+   /*Mediaquery responsive*/
+
+   	@media (min-width: 0px) {
+		body{
+		background-image: url("../images/homebackground.jpg");
+		background-repeat:no-repeat;
+		height: 400px;
+		background-position: center;
+	}
+
+		#computergif2 {
+		max-width: 30%;
+		max-height: 30%;
+		transform: rotateY(180deg);
+		float:right
+		
+	}
+
+		.computergif {
+		 
+		max-width: 30%;
+		max-height: 30%;
+
+	}
+           
+}
+
+   	@media (min-width: 480px) {
+		body {
+		background-image: url("../images/homebackground.jpg");
+		background-repeat:no-repeat;
+		height: 800px;
+		background-position: center;
+		
+	}
+
+		#computergif2 {
+		max-width: 30%;
+		max-height: 30%;
+		transform: rotateY(180deg);
+		float:right
+		
+	}
+
+		.computergif {
+		 
+		max-width: 30%;
+		max-height: 30%;
+
+
+}
+
+   	@media (min-width: 1201px) {
+		body {
+	}
+
+}
+
+@font-face {
+	font-family: heroFont;
+	src: url(AirstreamNF.ttf)
 }
 
 .navbar {
+	display: flex;
+	justify-content: flex-end;
     overflow:hidden;
     white-space: nowrap;
     margin: 5px
@@ -64,10 +124,10 @@ body {
 }
 
 .navbar>li {
-  	display: inline-flex;
+  	
   	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 900;
-    text-align: right;
+	margin: 0px 10px;
 }
 
 .navlink{
@@ -79,8 +139,17 @@ body {
 }
 
 h1 {
-    color:White;
-	font-size: 60px;
+    color:#da2de0;
+	text-shadow: 0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #da2de0,
+    0 0 82px #da2de0,
+    0 0 92px #da2de0,
+    0 0 102px #da2de0,
+    0 0 151px #da2de0;
+	font-size: 90px;
+	font-family: heroFont;
 }
 
 h2 {
@@ -88,7 +157,7 @@ h2 {
 	color:white
 }
 
-/*Falta instalr tipo de letra neon */
+
 #mainindex {
 text-align: center;
 padding-top: 150px;

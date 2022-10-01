@@ -8,18 +8,86 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<header>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Biografía</li>
-            <li>Portfolio</li>
-            <li>Contacto</li>
-        </ul>
-    </nav>
+    <style>
 
-</header>
+    .bio{
+        justify-content: center;
+        align-items: center;
+    }
+
+  
+    h2 {
+        font-display: inherit;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .fotodani{
+        border-radius: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        max-width: 250px;
+        min-width: none;
+        box-shadow: 0 0 7px #da2de0,
+    0 0 10px #da2de0,
+    0 0 21px #fff,
+    0 0 42px #da2de0,
+    0 0 82px #da2de0,
+    0 0 102px #da2de0;    
+    }
+
+    p {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 20px;
+        color:white;
+        width: 60%;
+        margin-left:auto;
+        margin-right: auto;
+    }
+
+    .biotext {
+        margin-top:40px;
+        background-color: #da2de02a;
+        padding: 15px 0px;
+    }
+    
+
+    </style>
+
 <body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="navbar list">
+                <li><a href="index.html" class="navlink">Home</a></li>
+                <li><a href="biografia.html" class="navlink">Biografía</a></li>
+                <li><a href="portfolio.html" class="navlink">Portfolio</a></li>
+                <li><a href="contacto.html" class="navlink">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="bio">
+
+        <h2>Sobre mí</h2>
+
+        <div>
+            <img class="fotodani" src="images/IMG_3913-1.jpg" alt="foto de Dani">
+        </div>
+
+        <div class="biotext">
+            <p>Aquí es donde tengo que hablar sobre mí, lo profesional que soy y tal...</p>
+
+            <p>Pues en lo profesional he hecho un poco de todo, desde poner cafés en Londres hasta dar masajes en una clínica de osteopatía, pasando por call centers y restaurantes.</p>
+
+            <p>Durante los últimos 5 años he ido de forma paralela trasteando con plataformas como Shopify y Carrd para pequeños proyectos pero nunca modifiqué el código en profundidad y... ¡ya iba siendo hora!</p>
+        </div>
+
+    </section>
     
 </body>
 </html>

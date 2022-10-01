@@ -8,14 +8,36 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Biografía</li>
-            <li>Portfolio</li>
-           <li>Contacto</li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar list">
+                <li><a href="index.html" class="navlink">Home</a></li>
+                <li><a href="biografia.html" class="navlink">Biografía</a></li>
+                <li><a href="portfolio.html" class="navlink">Portfolio</a></li>
+                <li><a href="contacto.html" class="navlink">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h2>Contacto</h2>
+    
+    <section>
+        <form tabindex="0">
+            <fieldset>
+                <ol>
+                    <li><label for="name">Nombre:</label><input type="text" autocomplete="name"></li>
+                    <li><label for="last-name">Apellidos:</label><input type="text" autocomplete="family-name"></li>
+                    <li><label for="email">Email:</label><input type="email" autocomplete="email"></li>
+                    <li><label for="phone">Teléfono:</label><input type="number"></li>
+                    <li><label for="message">Escribe aquí tu mensaje:</label><textarea autofocus></textarea></li>
+                </ol>
+                <input type="submit">
+                <input type="reset">
+            </fieldset>    
+        </form>
+        
+    
+    </section>
     
 </body>
 </html>
