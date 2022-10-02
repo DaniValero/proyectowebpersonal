@@ -7,6 +7,82 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+<style>
+    h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .contacto {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: 20px;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        padding-left: 20px;
+        color: white;
+        font-size: 20px;
+        background-color: #75017975;
+        box-shadow: 0 0 7px #da2de0,
+        0 0 10px #da2de0,
+        0 0 21px #fff,
+        0 0 42px #da2de0,
+        0 0 82px #da2de0;
+    }        
+
+    input {
+    margin-top: 15px;
+    margin-right: 15px;
+    display:inline-flex;
+
+    }
+
+    .submit, .reset {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: inline-flex;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        justify-content: center;
+        
+
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    textarea {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .message {
+        margin-top: 15px;
+    }
+
+    .dial {
+
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+
+
+   
+</style>
+
 <body>
     <header>
         <nav class="navbar">
@@ -21,7 +97,8 @@
     
     <h2>Contacto</h2>
     
-    <section>
+    <section class="contacto">
+
         <form tabindex="0">
             <fieldset>
                 <ol>
@@ -29,12 +106,18 @@
                     <li><label for="last-name">Apellidos:</label><input type="text" autocomplete="family-name"></li>
                     <li><label for="email">Email:</label><input type="email" autocomplete="email"></li>
                     <li><label for="phone">Teléfono:</label><input type="number"></li>
-                    <li><label for="message">Escribe aquí tu mensaje:</label><textarea autofocus></textarea></li>
+                    <li class="message"><label for="message">Escribe aquí tu mensaje:</label><textarea autofocus></textarea></li>
                 </ol>
-                <input type="submit">
-                <input type="reset">
+                <input class="submit" type="submit">
+                <input class="reset" type="reset">
             </fieldset>    
         </form>
+
+        <div>
+            <img class="dial" src="images/dialgif.gif" alt="gif de ventana de conexion a internet retro">
+        </div>
+       
+
         
     
     </section>

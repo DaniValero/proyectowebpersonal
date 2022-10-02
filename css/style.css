@@ -75,6 +75,12 @@ table {
 		max-height: 30%;
 
 	}
+
+	.dial {
+		width: 50%;
+
+	}
+
            
 }
 
@@ -101,13 +107,28 @@ table {
 		max-height: 30%;
 
 
-}
+	}
+		.dial {
+			width: 50%;
 
-   	@media (min-width: 1201px) {
-		body {
 	}
 
-}
+   	@media (min-width: 1201px) {
+
+	body {
+		background-image: url("../images/homebackground.jpg");
+		background-repeat:no-repeat;
+		height: 800px;
+		background-position: center;
+		
+	}
+
+	.dial {
+		max-width: 30%;
+		max-height: 30%;
+	}
+
+	}
 
 @font-face {
 	font-family: heroFont;
@@ -160,7 +181,7 @@ h2 {
 
 #mainindex {
 text-align: center;
-padding-top: 150px;
+padding-top: 90px;
 line-height: 100px;
 }
 
