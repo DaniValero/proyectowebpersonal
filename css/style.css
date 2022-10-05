@@ -358,6 +358,13 @@ p {
 
 /* Portfolio */
 
+.proyecto1img, .proyecto2img, .proyecto3img {
+	width: 90%;
+	margin: 10px;
+	margin-left:auto;
+	margin-right: auto;
+}
+
 .proyectos {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	display: block;
